@@ -1,0 +1,155 @@
+#exit-intent-overlay {
+    display: none;
+    position: fixed;
+	top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: rgba(250, 250, 255, 0.88);
+    z-index: 9999;
+}
+
+#exit-intent-popup {
+	display: none;
+    position: fixed;
+    top: 0;
+    background: #191A1B;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 4% auto;
+    cursor: initial;
+    z-index: 99998;
+    left: 0px;
+    right: 0px;
+    max-width: 1200px;
+	padding: 0;
+}
+
+#exit-intent-popup::before {    
+	  content: "";
+	  background-image: url('../images/bg-conversion-play-popups-light.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+	  z-index: -1;
+}
+
+#exit-intent-popup-inner-container{
+	width: 100%;
+	background-size: cover;
+    padding: 65px 20px;
+}
+
+#exit-intent-popup .close-button {
+	all: initial !important;
+    background: #f2f5f9 !important;
+    display: block !important;
+    position: absolute !important;
+    right: 10px !important;
+    top: 10px !important;
+    padding: 5px !important;
+    line-height: 0 !important;
+    border-radius: 100% !important;
+    cursor: pointer !important;
+}
+
+#exit-intent-popup .close-button svg{
+	width: 12px !important;
+    height: 12px !important;
+}
+
+#exit-intent-popup .popup-content {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.text-container{
+	text-align: center;
+	padding-left: 19%;
+	padding-top: 6%;
+}
+
+.image-holder{
+	padding-top: 5%;
+	padding-right: 17%;
+}
+
+.text-container span:nth-of-type(1){
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	display: block;
+}
+
+.text-container span:nth-of-type(2){
+    font-family: Inter;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+	display: block;
+	line-height: 1.3;
+}
+
+.text-container span:nth-of-type(3){
+	color: rgb(255, 255, 255);
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+	display: block;
+	letter-spacing: -0.7px;
+	margin: 25px 0 25px 0;
+}
+
+.text-container span:nth-of-type(4){
+	color: rgb(189, 195, 199);
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+	display: block;
+    width: 68%;
+    margin: 20px auto 0 auto;
+}
+
+.text-container input{
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    padding: 10px 5px;
+	border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.read-more-button{
+	width: 96%;
+    display: block;
+    margin: 0 auto;
+    background: #003fff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+	border-radius: 5px;
+    border: 1px solid #003fff;
+}
+
+.read-more-button:hover {
+	background: rgba(255, 0, 0, 0.0);
+	color: #fff;
+	border-color: #fff;
+}
+
+.privacy-button{
+	color: rgb(189, 195, 199);
+}
+
+@media only screen and (max-width: 600px) {
+	.text-container{
+		padding-left: 0%;
+	}
+}
